@@ -1,0 +1,64 @@
+1) introduction
+
+2) variables
+
+3) functions
+
+    => named functions
+
+    => arrow functions
+
+    => rest parameters in functions
+
+    => optional parameters in functions
+
+    => generator functions
+
+    => IIFE (Immidiate Invokable Functional Expressions)
+
+    => constructor functions
+        --
+        --
+        --
+
+4) arrays manipulations
+
+5) JSON
+
+6) AJAX Calls     (JQuery)
+
+7) CallBacks
+
+        callback hell
+
+8) Promises
+
+    async & await
+
+9) Debouncing
+
+10) Throtting
+
+11) call(), apply() and bind()
+
+12) DOM Manipulations
+
+13) Debugging of JavaScript Applications
+
+
+-----
+-----
+-----
+
+
+
+
+
+  
+
+
+
+
+
+
+

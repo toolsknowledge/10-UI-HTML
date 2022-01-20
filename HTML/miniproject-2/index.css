@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    background-color: salmon;
+    width: 20%;
+    height: 100vh;
+    float: right;
+}
+.my_class{
+    font-size: 150px;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+a{
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg,red,black);
+    padding: 10px;
+    width: 90%;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+a:hover{
+    background: linear-gradient(45deg,red,white);
+    font-family: bold;
+}
+
+
+
+
