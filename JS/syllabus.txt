@@ -50,6 +50,124 @@
 -----
 -----
 
+introduction
+************
+    => JavaScript is the Scripting Language
+
+    => JavaScript Released by Netscape
+
+    => Current Version of JavaScript is ES12
+
+    => ES Stands for ECMA Script
+
+    => JavaScript used to convert the Static Web Pages to Dynamic Web Pages
+
+    => JavaScript used to build the Angular,React,NodeJS,VueJS,......
+
+    => we will save JavaScript files with ".js" extension
+
+    => we will include JavaScript to webpages with <Script></Script> tag
+
+    => Visual Studio Code is the Suggestable IDE to build the JavaScript Applications.
+
+    => we can execute JavaScript in two ways.
+
+            1) Intrepreter
+
+            2) node
+
+    => Intrepreter present in Browser Engine
+
+    => node tool present in NodeJS.
+
+    => JavaScript is the "Object Based" Scripting Language
+
+    => Vendor provided so many predefined objects, so as a developer we can use predefined objects.
+
+    Ex.
+            console
+
+            document
+
+            window
+
+            Date
+
+            Time
+
+            ----
+            ----
+            ----
+
+    => JavaScript execution is Synchronous Execution
+
+    => either Intrepreter or node tool, will execute JavaScript Code line by line.
+
+
+Software Installations
+**********************
+1) download and install NodeJS
+
+        NodeJS contains node tool
+
+        node tool, helps to execute the JavaScript
+
+website : https://nodejs.org/en/download/
+
+file    : node-v16.13.2-x64.msix
+
+
+2) download and install Visual Studio Code
+
+
+        Visual Studio Code given by Microsoft
+
+        Visual Studio Code also called as VSCode
+
+        VSCode IDE is open source IDE.
+
+website : https://code.visualstudio.com/docs/?dv=win
+
+file     : VSCodeUserSetup-x64-1.63.2.exe
+
+
+
+Execution of JavaScript
+***********************
+
+> node  demo.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
