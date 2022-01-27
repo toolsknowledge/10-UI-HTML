@@ -1,86 +1,269 @@
+//variables
 //variables are used to store the data
-//Ex. string,number,boolean,arrays,objects,.....
-//we will define the variables with the help of var, let or const
-//let and const keywords introduced in ES6
-//variables declaration should contain a-z, A-Z, 0-9, $ and _
+//Ex. string, number, boolean, arrays, objects,.....
+//we will define the variables with the help of var / let / const
+//let & const keywords introduced in ES6
+//ES Stands for ECMA Script
+//variables should contain a-z, A-Z, 0-9, $ and _
 //variables declaration should not start with digits
+//javascript supports the following datatypes
+//1) string    2) number    3) boolean     4) undefined     5) null    6) bigint    7) Symbol
 /*
     syntax
     ******
-        var/let/const variablename = value;
+    var/let/const variablename = value;
 */
 
 //string
-//collection of characters called as "string"
-//we will declare the string in three ways ""(double quotes), ''(single quotes) and ``(backtick)
-//``(backtick) operator also called as "template literal"
-//template literal introduced in ES6
-//template literal used to define the paragraphs
-var sub_one = "Angular13";
+//collection of characters called as string
+//we will define the string with the help of ""(double quotes), ''(single quotes) and ``(backtick)
+//``(backtick) called as template literal
+//``(backtick) operator introduced in ES6
+//``(backtick) operator used to define the paragraphs (multiline strings)
+var sub_one = "ReactJS";
 var sub_two = "NodeJS";
-var sub_three = "MongoDB";
-var mean_stack = `${sub_one}<==>${sub_two}<==>${sub_three}`;
-console.log(mean_stack);        //Angular13<==>NodeJS<==>MongoDB
+var sub_three = "MongoDB"; 
+var mern_stack = `${sub_one}<==>${sub_two}<==>${sub_three}`;
+console.log(mern_stack);
 
 
-var tbl_name = "employees";
+var table_name = "employees";
 var sal = 50000;
-var sql_query = `select * from ${tbl_name} where e_sal>${sal}`;
-console.log(sql_query);             //select * from employees where e_sal>50000
+var sql_query = `select * from ${table_name} where esal>${sal}`;
+console.log(sql_query);                     //select * from employees where esal>50000
 
-var uname = "ashokit";
-var upwd = "ashokit123";
-var login_query = `select * from ${tbl_name} where uname='${uname}' and upwd='${upwd}'`;
-console.log(login_query);           //select * from employees where uname='ashokit' and upwd='ashokit123'
 
+var u_name = "ashokit";
+var u_pwd = "ashokit123";
+var login_query = `select * from ${table_name} where uname='${u_name}' and upwd='${u_pwd}'`;
+console.log(login_query);
+
+
+var front_end = "Angular13";
+var backend = "NodeJS";
+var database = "MongoDB";
+var mean_stack = `
+        MEAN Stack
+        ********** 
+        mean stack development means collabration of following technologies
+        Frontend-----> ${front_end}
+        backend -----> ${backend}
+        database-----> ${database}
+`;
+console.log(mean_stack);
 
 
 
 //number
-//1) decimal            2) fractional           3) hexadecimal      4) octal            5) binary
-//hexadecimal numbers prefix with 0X
-//octal numbers prefix with 0o
-//binary numbers prefix with 0b
-var decimal = 100;
-var double = 100.12345;
-var hexadecimal = 0x123ABC;
-var octal = 0o123;
-var binary = 0b1010;
-console.log( decimal, double, hexadecimal, octal, binary );         //100 100.12345 1194684 83 10
+//decimal, fractional, hexadecimal, octal and binary
+//hexadecimal numbers prefix with "0x"
+//octal numbers prefix with "0o"
+//binary numbers prefix with "0b"
+var decimal_num = 100;
+var fractional_num = 100.12345;
+var hexadecimal_num = 0X123ABC;
+var octal_num = 0o123;
+var binary_num = 0b1010;
+console.log(decimal_num,fractional_num,hexadecimal_num,octal_num,binary_num);
+//100 100.12345 1194684 83 10
 
 
 //boolean
-//true    --- 1
-//false   --- 0
+//true ---  1
+//false --- 0
 var flag = true;
 var flag1 = false;
-console.log(flag, flag1);                                           //true false
+console.log( flag, flag1 );                 //true false
 
 
 
-//var 123abc;                 //An identifier or keyword cannot immediately follow a numeric literal.
-var _123abc;
-var $123abc
-//var #123abc;                  //An identifier or keyword cannot immediately follow a numeric literal.
+//array
+//collection of indexed elements called as array
+//[]
+//index starts from 0
+var arr1 = [10,20,30,40,50];
+//loops
+//for loop
+for(var i=0;i<5;i++){
+    console.log( arr1[i] );
+}
+
+//forEach()
+arr1.forEach((element,index)=>{
+    console.log(element, index);
+})
 
 
-//undefined
-var x;
-console.log(x);                 //undefined
-
-x=null;
-console.log(x);                 //null
+var array1 = ["Hello_1","Hello_2","Hello_3","Hello_4","Hello_5"];
+var array2 = ["Welcome_1","Welcome_2","Welcome_3","Welcome_4","Welcome_5"];
 
 
+array1.forEach((element,index)=>{
+    console.log(element,array2[index]);
+});
 
-//typeof
-console.log( typeof "Hello" );                  //string
-console.log( typeof 100 );                      //number
-console.log( typeof true );                     //boolean
-console.log( typeof undefined );                //undefined
-console.log( typeof null );                     //object
-console.log( typeof [] );                       //object
-console.log( typeof function fun_one(){} );     //function
+
+
+//json
+//java script object notation
+//javascript objects
+//json is light weight
+//used to transfer the data over the network
+//Syntax
+//Objects ----    {}
+//Arrays  ----    []
+//data    ----    key & value pairs ,  key & value separated by using ":", key & value pairs separated by using ","   
+var obj = {
+    "sub_one" : "ReactJS",
+    "sub_two" : "NodeJS",
+    "sub_three" : "MongoDB"
+};
+console.log( obj.sub_one, obj.sub_two, obj.sub_three );             //ReactJS NodeJS MongoDB
+
+
+var obj1 = {
+    "key1" : "value1",
+    "key2" : "value2",
+    "key3" : "value3"
+};
+//for....in  loop
+for(var key in obj1){
+    console.log( obj1[key] );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
