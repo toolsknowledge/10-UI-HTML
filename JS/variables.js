@@ -78,7 +78,7 @@ console.log( flag, flag1 );                 //true false
 
 
 //array
-//collection of indexed elements called as array
+//collection of indexed elements called as "array"
 //[]
 //index starts from 0
 var arr1 = [10,20,30,40,50];
@@ -108,7 +108,7 @@ array1.forEach((element,index)=>{
 //java script object notation
 //javascript objects
 //json is light weight
-//used to transfer the data over the network
+//used to transfer the data over the "network"
 //Syntax
 //Objects ----    {}
 //Arrays  ----    []
@@ -130,6 +130,137 @@ var obj1 = {
 for(var key in obj1){
     console.log( obj1[key] );
 }
+
+var x;       
+console.log(x);                     //undefined
+
+x=null;
+console.log(x);                     //null
+
+
+//datatype
+//typeof
+console.log( typeof "Hello" );              //string
+console.log( typeof 100 );                  //number
+console.log( typeof true );                 //boolean
+console.log( typeof undefined );            //undefined
+console.log( typeof null );                 //object
+console.log( typeof [] );                   //object
+console.log( typeof function(){} );         //function
+
+
+
+
+//evalution(execution) happens from left to right  (javascript)
+console.log( 10>9>8 );                  //false
+console.log( 1<2<3 );                   //true
+
+
+//BODMAS
+//BRACKET
+//OF
+//DIVISION
+//MULTIPLICATION
+//ADDITION
+//SUBTRACTION
+console.log( 10 + 5/10 - 5 );               //5.5
+console.log( (10 + 5)/(10 - 5) );           //3
+
+
+// ==   (compare left value with right value)
+// ===  (comapre left value with datatype with right value with datatype)
+console.log( 10 == "10" );              //true
+console.log( 10 === "10" );             //false
+console.log( 10 == "ten" );             //false
+console.log( 10 === "ten" );            //false
+
+
+//"more accuracy" while adding "fractional" numbers
+console.log( 0.1+0.2 );                     //0.30000000000000004
+console.log( 0.1+0.2 == 0.3 );              //false
+console.log( 0.1+0.2 === 0.3 );             //false
+
+
+
+// &    (and) left and right should be true ---- true
+// |    (or)  at least one should be true   ---- true
+// ^    (xor) both should be opposite       ---- true
+
+console.log( 1 & 1 );                   //1
+console.log( 1 & 0 );                   //0
+console.log( 0 & 1 );                   //0
+console.log( 0 & 0 );                   //0
+
+console.log( 1 | 0 );                   //1
+console.log( 0 | 1 );                   //1
+console.log( 1 | 1 );                   //1
+console.log( 0 | 0 );                   //0
+
+
+console.log( 1 ^ 1 );                   //0
+console.log( 0 ^ 0 );                   //0
+console.log( 1 ^ 0 );                   //1
+console.log( 0 ^ 1 );                   //1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
