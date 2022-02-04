@@ -1,0 +1,51 @@
+<!--
+<script>
+   function fun_one(){
+        return "welcome to named functions";
+   };
+   console.log( fun_one() );                //welcome to named functions
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(){
+        return "Hello";
+    }
+
+    console.log( fun_one );
+    console.log( fun_one() );
+
+</script>
+-->
+
+<!--
+<script>
+    function fun_one(param1,param2,param3){
+        console.log(param1,param2,param3);
+    };
+    fun_one("Hello_1","Hello_2","Hello_3");                 //Hello_1 Hello_2 Hello_3
+    fun_one("Welcome_1","Welcome_2","Welcome_3");           //Welcome_1 Welcome_2 Welcome_3
+    fun_one();                                              //undefined undefined undefined
+    fun_one(null,null,null);                                //null null null
+    fun_one(undefined,"Hello_2");                           //undefined 'Hello_2' undefined
+</script>
+-->
+
+
+<script>
+    function fun_one(){
+        return fun_two;
+    }
+
+    function fun_two(){
+        return "Hello";
+    }
+
+    console.log( fun_one()() );                         //Hello
+
+
+</script>
+
+
