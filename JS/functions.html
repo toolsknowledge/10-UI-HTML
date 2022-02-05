@@ -34,6 +34,7 @@
 -->
 
 
+<!--
 <script>
     function fun_one(){
         return fun_two;
@@ -44,8 +45,169 @@
     }
 
     console.log( fun_one()() );                         //Hello
-
-
 </script>
+-->
+
+<!--
+<script>
+    let fun_one = ()=>{
+        return "welcome to arrow functions";
+    }
+    console.log( fun_one() );                   //welcome to arrow functions
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = (param1,param2,param3)=>{
+        return `${param1}<==>${param2}<==>${param3}`;
+    }
+    console.log( fun_one("Angular13","NodeJS","MongoDB") );         //Angular13<==>NodeJS<==>MongoDB
+    console.log( fun_one("ReactJS","NodeJS","MongoDB") );           //ReactJS<==>NodeJS<==>MongoDB
+    console.log( fun_one("VueJS","NodeJS","MongoDB") );             //VueJS<==>NodeJS<==>MongoDB
+    console.log( fun_one() );                                       //undefined<==>undefined<==>undefined
+    console.log( fun_one(null,null,null) );                         //null<==>null<==>null
+    console.log( fun_one(undefined,"Hello_2",null) );               //undefined<==>Hello_2<==>null
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = (param1,param2)=>{
+        console.log( param1(), param2() );
+    }
+   
+    fun_one( ()=>{ 
+        return "hello_1";
+    }, ()=>{
+        return "hello_2";
+    } );                            //hello_1 hello_2
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = ()=>{
+        return "hello";
+    };
+
+    console.log( fun_one );
+    console.log( fun_one() );
+</script>
+-->
+
+
+<!--
+<script>
+    let fun_one = ()=>{
+        return fun_two;
+    };
+
+    let fun_two = ()=>{
+        return "hello";
+    };
+
+    console.log( fun_one()() );                 //hello
+</script>
+-->
+
+
+<!--
+<script>
+    let fun_one = ()=> console.log( "hello" );
+    
+    fun_one();                  //hello
+</script>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

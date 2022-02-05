@@ -185,6 +185,114 @@ Named Functions
         funactionname(arg1,arg2,arg3,arg4,......arg n);
 
 
+Anonymous Functions
+*******************
+        - The function without name called as "Anonymous" function.
+
+        - Anonymous functions also called as "arrow" functions
+
+        - we will represent arrow functions with the help of "=>"
+
+        - arrow functions behaves like "callback" functions.
+
+        Syntax
+        ******
+
+        1) function definition
+
+        2) function calling
+
+        function definition
+        *******************
+        let variablename = (param1,param2,param3,....paramn)=>{
+                //business logic
+        }
+
+
+        call the function
+        *****************
+        variablename(arg1,arg2,arg3,.....arg n);
+
+
+Rest Parameters in Functions
+****************************
+        - we will store more than one value in a "single parameter"
+
+        - "..." called as spread operator/rest parameter
+
+        - spread operator introduced in ES6
+
+        - we can have only "one spread operator" per function
+
+        - position of spread operator must be "last" in parameters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
