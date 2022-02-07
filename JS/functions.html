@@ -121,6 +121,351 @@
 -->
 
 
+<!--
+<script>
+    function fun_one(...param1){
+        console.log(param1);
+    }
+    fun_one("Hello_1");                             //['Hello_1']
+    fun_one("Hello_1","Hello_2");                   //['Hello_1', 'Hello_2']
+    fun_one("Hello_1","Hello_2","Hello_3");         //['Hello_1', 'Hello_2', 'Hello_3']
+    fun_one();                                      //[]
+    fun_one(undefined);                             //[undefined]
+    fun_one(undefined,null,undefined);              //[undefined, null, undefined]
+</script>
+-->
+<!--
+<script>
+    function fun_one(...param1,...param2){
+
+    };
+    //Uncaught SyntaxError: Rest parameter must be last formal parameter
+</script>
+-->
+
+<!--
+<script>
+    function fun_one(...param1,param2){
+
+    }                               //Uncaught SyntaxError: Rest parameter must be last formal parameter
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(param1,...param2){
+        console.log(param1,param2);
+    }
+    fun_one();                              //undefined []
+    fun_one("Hello_1");                     //Hello_1 []
+    fun_one("Hello_1","Hello_1");           //Hello_1 ['Hello_1']
+    fun_one("Hello_1","Hello_1","Hello_2"); //Hello_1 ['Hello_1', 'Hello_2']
+    fun_one(undefined,undefined);           //undefined [undefined]
+    fun_one(null,null);                     //null [null]
+</script>
+-->
+
+<!--
+<script>
+    function fun_one(param1="Hello_1",param2="Hello_2",param3="Hello_3"){
+        console.log( param1, param2, param3 );
+    }
+    fun_one();                                        //Hello_1 Hello_2 Hello_3
+    fun_one("Welcome_1");                             //Welcome_1 Hello_2 Hello_3
+    fun_one(undefined,undefined,undefined);           //Hello_1 Hello_2 Hello_3
+    fun_one(undefined,"Welcome_2");                   //Hello_1 Welcome_2 Hello_3
+    fun_one(null,null,null);                          //null null null
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(param1,param2="Hello_2",...param3){
+        console.log( param1,param2,param3);
+    }
+    fun_one();                                      //undefined 'Hello_2' []
+    fun_one("Hello_1",undefined,"Hello_3");         //Hello_1 Hello_2 ['Hello_3']
+    fun_one(undefined,undefined,undefined);         //undefined 'Hello_2' [undefined]
+    fun_one(null,null,null);                        //null null [null]
+</script>
+-->
+
+
+
+
+<!--
+    IIFE
+    ****
+        - IIFE Stands for Immidiate Invokable Functional Expression
+
+        - ES9
+
+        - when ever we define the function, it will execute automatically 
+
+        Syntax
+        ******
+        ((param1,param2,param3,....paramn)=>{
+            //business logic
+        })(arg1,arg2,arg3,....argn);
+-->
+
+<!--
+<script>
+     (()=>{
+         console.log("welcome to IIFE");
+     })();
+
+     //welcome to IIFE
+</script>
+-->
+
+
+<!--
+<script>
+    ((param1,param2,param3)=>{
+        console.log( param1, param2, param3 );
+    })("Hello_1","Hello_2","Hello_3");
+
+    //Hello_1 Hello_2 Hello_3
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(param1,param2,param3){
+        console.log( param1, param2, param3 );
+    };
+    fun_one( (()=>{ return "Hello_1" })(), (()=>{ return "Hello_2" })(), (()=>{ return "Hello_3" })() );
+    //Hello_1 Hello_2 Hello_3
+</script>
+-->
+
+
+<!--
+    Generators
+    ***********
+        Generators are used to control the "flow" of execution
+
+        Generators will return "cursor" mechanism
+
+        by using cursor, we can control the "flow" of execution
+
+        Generator functions will prefix with "*" symbol
+
+        inside the "generator" functions, all statements should prefix with "yield" keywors
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -216,15 +216,58 @@ Anonymous Functions
 
 Rest Parameters in Functions
 ****************************
-        - we will store more than one value in a "single parameter"
+        Rest Parameters in functions, used to store the more than "one value" in a single parameter
 
-        - "..." called as spread operator/rest parameter
+        we will represent Rest Parameter with "..." symbol
 
-        - spread operator introduced in ES6
+        "..." symbol called as spread operator/rest parameter
 
-        - we can have only "one spread operator" per function
+        we can have only "one spread operator" per functions
 
-        - position of spread operator must be "last" in parameters
+        occurance of spread operator should be last in parameters
+
+
+
+Default Parameters in functions
+*******************************
+        - while defining the functions, parameters initilized with Default values
+
+        - this concept also introduced in ES6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
