@@ -247,16 +247,341 @@
 <!--
     Generators
     ***********
-        Generators are used to control the "flow" of execution
+       Generators are used to control the flow of execution
 
-        Generators will return "cursor" mechanism
+       Generator functions prefix with "*"
 
-        by using cursor, we can control the "flow" of execution
+       each statement prefix with "yield" keyword
 
-        Generator functions will prefix with "*" symbol
+       Generators returns the "cursor" mechanism
 
-        inside the "generator" functions, all statements should prefix with "yield" keywors
+       with the help of "cursor" we can control "flow" of execution
 -->
+
+
+<!--
+<script>
+    function *fun_one(){
+        yield "Hello_1";
+        yield "Hello_2";
+        yield "Hello_3";
+        yield "Hello_4";
+        yield "Hello_5";
+    }
+    let cursor = fun_one();
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+</script>
+-->
+
+
+
+<!--
+<script>
+    function *fun_one(){
+        yield "Hello_1";
+        yield *fun_three();
+        yield *fun_two();
+    }
+
+    function *fun_two(){
+        yield "Hello_2";
+    }
+
+    function *fun_three(){
+        yield "Hello_3";
+    }
+
+    let cursor = fun_one();
+    for(let i=0;i<3;i++){
+        console.log( cursor.next() );
+    }
+</script>
+-->
+
+
+<!--
+    encapsulation of "variables" and "functions" called as "class"
+
+    before "ES6" version, we will create classes by using "constructor functions"
+
+    in constructor functions, all the members(variables and functions) starts with "this" keyword
+
+    we will create object to the class by using "new" keyword
+-->
+
+
+<!--
+<script>
+    function ramesh_class(){
+        this.var_one = "ReactJS";
+        this.var_two = "NodeJS";
+        this.var_three = "MongoDB";
+    }
+
+    let obj = new ramesh_class();
+    console.log( obj.var_one, obj.var_two, obj.var_three );
+    //ReactJS NodeJS MongoDB
+</script>
+-->
+
+<!--
+<script>
+    function class_one(param1,param2,param3){
+        this.var_one = param1;
+        this.var_two = param2;
+        this.var_three = param3;
+    }
+    let obj1 = new class_one("hello_1","hello_2","hello_3");
+    console.log( obj1.var_one, obj1.var_two, obj1.var_three );
+    //hello_1 hello_2 hello_3
+
+    let obj2 = new class_one("welcome_1","welcome_2","welcome_3");
+    console.log( obj2.var_one, obj2.var_two, obj2.var_three );
+    //welcome_1 welcome_2 welcome_3
+</script>
+-->
+
+
+
+
+<!--
+<script>
+    function class_one(){
+        this.sub_one = "ReactJS";
+        this.sub_two = "NodeJS";
+        this.sub_three = "MongoDB";
+
+       this.fun_one = function(){
+            return this.sub_one;  
+       };
+
+       this.fun_two = function(){
+           return this.sub_two;
+       };
+
+       this.fun_three = function(){
+            return this.sub_three;
+       };
+
+    };
+
+    let obj = new class_one();
+    console.log( obj.fun_one(), obj.fun_two(), obj.fun_three() );
+    //ReactJS NodeJS MongoDB
+</script>
+-->
+
+
+<!--
+<script>
+    function class_one(param1){
+        this.var_one = param1;
+        this.fun_one = function(){
+            return this.var_one;
+        }
+    }
+
+    let obj1 = new class_one("hello");
+    console.log( obj1.fun_one() );                          //hello
+
+    let obj2 = new class_one("welcome");
+    console.log( obj2.fun_one() );                          //welcome
+
+</script>
+-->
+
+
+<script>
+    function class_one(param1){
+        this.fun_one = function(){
+           return param1.myFun(); 
+        }
+    }
+
+
+    function class_two(){
+        this.myFun = function(){
+            return "hello";
+        }
+    }    
+
+
+    let obj = new class_one( new class_two() );
+    console.log( obj.fun_one() );
+    //hello
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
