@@ -395,7 +395,7 @@
 </script>
 -->
 
-
+<!--
 <script>
     function class_one(param1){
         this.fun_one = function(){
@@ -415,6 +415,267 @@
     console.log( obj.fun_one() );
     //hello
 </script>
+-->
+
+
+<!--
+<script>
+    function class_one(){
+
+    };
+    class_one.prototype.var_one = "Hello_1";
+    class_one.prototype.var_two = "Hello_2";
+    class_one.prototype.var_three = "Hello_3";
+
+    let obj = new class_one();
+    console.log( obj.var_one, obj.var_two, obj.var_three );
+    //Hello_1 Hello_2 Hello_3
+</script>
+-->
+
+<!--
+<script>
+    function class_one(){
+
+    }
+    class_one.prototype.fun_one = function(){
+        return "Hello_1";
+    }
+    class_one.prototype.fun_two = function(){
+        return "Hello_2";
+    }
+    class_one.prototype.fun_three = function(){
+        return "Hello_3";
+    }
+    let obj = new class_one();
+    console.log( obj.fun_one(), obj.fun_two(), obj.fun_three() );
+    //Hello_1 Hello_2 Hello_3
+</script>
+-->
+
+
+<!--
+<script>
+    function class_one(){
+
+    };
+    class_one.prototype.var_one = "Hello_1";
+    class_one.prototype.fun_one = function(){
+        return "Hello_2";
+    }
+
+    let obj = new class_one();
+    console.log( obj.fun_one() );
+</script>
+-->
+
+<!--
+<script>
+    function class_one(){
+
+    };
+    class_one.prototype.fun_one = function(){
+        return "Hello_1";
+    };
+
+
+    function class_two(){
+
+    };
+    class_two.prototype = Object.create(class_one.prototype);
+    class_two.prototype.fun_two = function(){
+        return "Hello_2";
+    };
+
+    let obj = new class_two();
+    console.log( obj.fun_one(), obj.fun_two() );
+    //Hello_1 Hello_2
+</script>
+-->
+
+
+<script>
+    function class_one(){
+
+    };
+    class_one.prototype.fun_one = function(){
+        return "Hello_1";
+    };
+
+
+    function class_two(){
+
+    };
+    class_two.prototype = Object.create(class_one.prototype);
+    class_two.prototype.fun_two = function(){
+        return "Hello_2";
+    };
+
+    function class_three(){
+
+    }
+    class_three.prototype = Object.create( class_two.prototype );
+    class_three.prototype.fun_three = function(){
+        return "Hello_3";
+    };
+
+    let obj1 = new class_one();
+    console.log( obj1.fun_one() );                  //Hello_1
+
+
+    let obj2 = new class_two();
+    console.log( obj2.fun_one(), obj2.fun_two() );  //Hello_1 Hello_2
+
+    let obj3 = new class_three();
+    console.log( obj3.fun_one(), obj3.fun_two(), obj3.fun_three() );    //Hello_1 Hello_2 Hello_3
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

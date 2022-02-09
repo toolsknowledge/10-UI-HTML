@@ -16,7 +16,7 @@
 
     => IIFE (Immidiate Invokable Functional Expressions)
 
-    => constructor functions
+    => constructor functions    (prototype) (prototype chaining)
         --
         --
         --
