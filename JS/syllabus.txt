@@ -1,3 +1,4 @@
+
 1) introduction
 
 2) variables
@@ -233,6 +234,119 @@ Default Parameters in functions
         - while defining the functions, parameters initilized with Default values
 
         - this concept also introduced in ES6
+
+
+
+optional parameters in functions
+********************************
+        - while calling the functions we will make few arguments are "optional"
+
+        - optional parameters will work in "TypeScript" Environment
+
+        - TypeScript is the "programming" language
+
+        - TypeScript Released by "Microsoft"
+
+        - TypeScript follows the "OOPS".
+
+        - we will represent optional parameters with "?"
+
+        - we will install TypeScript by using following command
+
+                > npm install -g typescript
+
+                "npm" stands for node packaging manager
+
+                "npm" present in NodeJS
+
+                -g stands for global installation
+
+        - we will save the TypeScript files with ".ts" extension
+
+        - in general, browsers unable to understand TypeScript.
+
+        - so, as a developer we must convert TypeScript to Equalent JavaScript
+
+        - conversion of TypeScript to Equalent JavaScript called as Transpilation
+
+        - "tsc" is the tool used to perform Transpilation
+
+        - "tsc" stands for TypeScript Compiler
+
+
+        > tsc demo.ts
+
+              o/p
+
+          demo.js 
+
+        > node demo.js 
+
+
+arrays
+******
+        collection of "indexed" elements called as "array"
+
+        we will represent the arrays with "[]"
+
+        index starts from "0"
+
+        we will access "array" elements with "indexes"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
