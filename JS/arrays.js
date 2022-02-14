@@ -224,7 +224,7 @@ console.log(z1);
 
 */
 
-let arr1 = [1,2,3,4];
+//let arr1 = [1,2,3,4];
 //[3,4,1,2]
 
 
@@ -232,6 +232,343 @@ let arr1 = [1,2,3,4];
 //[3,4]
 
 //[3,4,1,2]
+
+
+
+
+/*
+//findIndex()
+//used to know the index of a element
+console.log(
+    [10,20,30,40,50].findIndex((element,index)=>{
+        return element == 30;
+    })
+);
+//2
+
+console.log(
+    [10,20,30,40,50].findIndex((element,index)=>{
+        return element == 50;
+    })
+);      //4
+
+
+console.log(
+    [10,20,30,40,50].findIndex((element,index)=>{
+        return element == 60;
+    })
+);          //-1
+
+
+
+    let arr = [10,20,30,40,50];
+    arr.splice(arr.findIndex((element,index)=>{
+        return element == 30;
+    }),1);    
+    console.log(arr);
+    //[ 10, 20, 40, 50 ]
+
+
+    arr.splice(arr.findIndex((element,index)=>{
+        return element == 50;
+    }),1);
+    console.log(arr);
+    //[ 10, 20, 40 ]
+*/
+
+/*
+    let arr = [10,20,30,40,50];
+    console.log(
+        arr.find((element,index)=>{
+            return element == 30;
+        })
+    );
+    //30
+
+    console.log(
+        arr.find((element,index)=>{
+            return element == 300;
+        })
+    );
+    //undefined
+*/
+
+
+
+/*
+    let arr = [10,20,30,40,50];
+    console.log(
+        arr.includes(30)
+    );
+    //true
+
+    console.log(
+        arr.includes(300)
+    );
+    //false
+*/
+
+
+/*
+    let arr = [10,20,30,40,50];
+    console.log(
+        arr.some((element,index)=>{
+            return element>=50;
+        })
+    );
+    //true
+
+    console.log(
+        arr.some((element,index)=>{
+            return element>50;
+        })
+    );
+    //false
+*/
+
+
+
+/*
+    //every()
+    console.log(
+        [10,20,30,40,50].every((element,index)=>{
+            return element>=10;
+        })
+    );
+    //true
+
+    console.log(
+        [10,20,30,40,50].every((element,index)=>{
+            return element>10;
+        })
+    );
+    //false
+*/
+
+
+
+
+/*
+    let arr = [10,20,30,40,50];
+    arr.fill(100);
+    console.log(arr);                                       //[ 100, 100, 100, 100, 100 ]
+
+    arr.fill(200,1);
+    console.log(arr);                                       //[ 100, 200, 200, 200, 200 ]
+
+
+    arr.fill(300,2,3);
+    console.log(arr);                                       //[ 100, 200, 300, 200, 200 ]
+
+
+    arr.fill(400,3,4);
+    console.log(arr);                                       //[ 100, 200, 300, 400, 200 ]
+
+
+    arr.fill(500,4);
+    console.log(arr);                                       //[ 100, 200, 300, 400, 500 ]
+*/
+
+
+/*
+    let arr1 = [10,50,20,40,30];
+    console.log(
+        arr1.sort((arg1,arg2)=>{
+            return arg1-arg2;
+        })
+    );
+    //[ 10, 20, 30, 40, 50 ]
+
+    console.log(
+        arr1.sort((arg1,arg2)=>{
+            return arg2-arg1;
+        })
+    );
+    //[ 50, 40, 30, 20, 10 ]
+
+
+
+let arr1 = [50,30,10,40,20,80,60,90,70,-5];
+//2nd min : 10
+//2nd max : 80
+console.log(
+    arr1.sort((arg1,arg2)=>{
+        return arg1-arg2;
+    })[1]
+);
+//10
+console.log(
+    arr1.sort((arg1,arg2)=>{
+        return arg2-arg1;
+    })[1]
+); //80 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
