@@ -405,6 +405,150 @@ console.log(
 */
 
 
+/*
+    let arr1 = [1,2,3,4,5];
+    let arr2 = ["one","two","three","four","five"];
+    //[[1,"one"],[2,"two"],[3,"three"],[4,"four"],[5,"five"]]
+    //[1,"one",2,"two",3,"three",4,"four",5,"five"]
+    console.log(
+        arr1.flatMap((element,index)=>{
+            return [element,arr2[index]];
+        })
+    );
+    /*
+        [
+            1, 'one',
+            2, 'two',
+            3, 'three',
+            4, 'four',
+            5, 'five'
+        ]
+
+*/
+/*
+//indexOf()
+//it won't create indexes to repeated elements
+let arr1 = [10,20,30,10,20,30];
+arr1.forEach((element,index)=>{
+    console.log(element,index);
+    console.log( arr1.indexOf(element), index );
+});
+
+
+    10  0               0   0
+
+    20  1               1   1
+
+    30  2               2   2
+
+    10  3               0   3
+
+    20  4               1   4
+
+    30  5               2   5
+*/
+
+/*
+    let arr1 = [10,20,30,10,20,30];
+    console.log(
+        arr1.filter((element,index)=>{
+            return arr1.indexOf(element) === index;
+        })
+    );          //[ 10, 20, 30 ]
+*/
+
+
+
+//reverse()
+//reverse() function used to reverse the "array elements"
+console.log(
+    [10,20,30,40,50,60].reverse()
+);
+//[ 60, 50, 40, 30, 20, 10 ]
+
+console.log(
+    ["Hello_1","Hello_2","Hello_3","Hello_4","Hello_5"].reverse()
+);
+//[ 'Hello_5', 'Hello_4', 'Hello_3', 'Hello_2', 'Hello_1' ]
+
+
+console.log(
+    Array.from("Haroon").reverse().toString().replaceAll(",","")
+);
+
+//nooraH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
