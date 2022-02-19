@@ -458,7 +458,7 @@ arr1.forEach((element,index)=>{
 */
 
 
-
+/*
 //reverse()
 //reverse() function used to reverse the "array elements"
 console.log(
@@ -477,6 +477,295 @@ console.log(
 );
 
 //nooraH
+
+
+
+
+    console.log(
+        Array.from("Welcome").reverse().join("")
+    );
+
+    //toString()                    ----  e,m,o,c,l,e,W
+    //replace(",","")               ----  em,o,c,l,e,W
+    //replace(/,/g,"")              ----  emocleW
+    //replaceAll(",","")            ----  emocleW
+    //join("")                      ----  emocleW
+
+
+
+
+
+let arr = ["Angular14","ReactJS","VueJS","NodeJS"];
+//Res-1 :  ["NodeJS","VueJS","ReactJS","Angular14"]
+//Res-2 :  ["41ralugnA","SJtcaeR","SJeuV","SJedoN"]
+//Res-3 :  ["SJedoN","SJeuV","SJtcaeR","41ralugnA"]
+*/
+
+/*
+    console.log( "Hello".padStart(10,"*") );                    //*****Hello
+    console.log( "Hello".padEnd(10,"#") );                      //Hello#####
+    console.log( "AshokIT".padStart(10,"*").padEnd(13,"*") );   //***AshokIT***
+*/
+
+
+
+
+/*
+    let arr1 = [10,20,30,40,50,60,70,80,90,100];
+    arr1.copyWithin(2);
+    console.log(arr1);                                      //[10,20,10,20,30,40,50,60,70,80]
+
+
+    let arr2 = [10,20,30,40,50,60,70,80,90,100];
+    arr2.copyWithin(5);                                     
+    console.log(arr2);                                      //[10,20,30,40,50,10,20,30,40,50]
+
+
+    let arr3 = [10,20,30,40,50,60,70,80,90,100];
+    arr3.copyWithin(2,5);
+    console.log(arr3);                                      //[10,  20, 60, 70,  80,90, 100, 80, 90, 100]
+
+
+    let arr4 = [10,20,30,40,50,60,70,80,90,100];
+    arr4.copyWithin(2,4,8);
+    console.log(arr4);                                     //[ 10, 20, 50, 60,  70,80, 70, 80, 90, 100]
+*/
+
+/*
+    console.log("Hello".repeat(5));                 //HelloHelloHelloHelloHello
+*/
+
+
+/*
+    let str = " Hello ";
+    console.log( str.length );                          //7
+    console.log( str.trim().length );                   //5
+    console.log( str.trimStart().length );              //6
+    console.log( str.trimEnd().length );                //6
+*/
+
+
+/*
+console.log(
+    [10,20,10,10].lastIndexOf(10)
+);
+//3
+
+console.log(
+    [10,20,10,10].lastIndexOf(10,3)
+);
+//3
+*/
+
+
+/*
+    let str = "welcome to javascript";
+    console.log( str.split(" ") );                      //[ 'welcome', 'to', 'javascript' ]
+    console.log( "Hello".split("") );                   //[ 'H', 'e', 'l', 'l', 'o' ]
+*/
+
+
+/*
+    let str = "welcome to javascript";
+    console.log( str.substr(0,7) );                 //welcome
+    console.log( str.substr(8,2) );                 //to
+    console.log( str.substr(11,10) );               //javascript
+*/
+
+
+
+
+
+
+
+/*
+    let str = "welcome to javascript";
+    console.log( str.substring(0,7) );              //welcome
+    console.log( str.substring(8,10) );             //to
+    console.log( str.substring(11) );               //javascript
+*/
+
+
+
+
+
+
+
+
+let arr1 = ["Hello_1","Hello_2","Hello_3","Hello_4","Hello_5"];
+arr1.forEach((element,index)=>{
+    console.log(element,index);
+})
+
+for(let element of arr1){
+    console.log(element);
+}
+
+
+
+
+
+
+let obj = {
+    "sub_one" : "ReactJS",
+    "sub_two" : "NodeJS",
+    "sub_three" : "MongoDB"
+};
+for(let key in obj){
+    key == "sub_one" || key == "sub_two"?console.log(obj[key]):null;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
