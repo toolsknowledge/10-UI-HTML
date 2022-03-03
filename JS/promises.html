@@ -1,0 +1,94 @@
+<!--
+    Promises
+    ********
+        Execution of tasks with dependencies called as Promises
+
+        promises are used to implement the asynchronous communications
+
+        Promises are divided into two types
+
+        1) Promise creation
+
+        2) Promise Consumption
+
+        producer will create the "Promises"
+
+        consumer will consume the "promises"
+
+        producer will create the Promises with "Promise" class
+
+        consumer will consume the Promises in two ways
+
+        1) then()
+
+        2) async & await keywords
+-->
+
+
+<!--
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        resolve("welcome to promises");
+    });
+
+    promise1.then((posRes)=>{
+        console.log(posRes);
+    }, (errRes)=>{
+        console.log(errRes);
+    });                         //welcome to promises
+</script>
+-->
+
+
+
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello");
+        },5000);
+    });
+    promise1.then((posRes)=>{
+        console.log(posRes);
+    },(errRes)=>{
+        console.log(errRes);
+    });             //Hello
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
