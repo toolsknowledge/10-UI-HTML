@@ -47,6 +47,8 @@
 13) Debugging of JavaScript Applications
 
 14) Closures
+
+15) Currying
 -----
 -----
 -----
